@@ -175,7 +175,6 @@ p, li, .content, .w3-container p {
   font-size: 1rem;
   margin: 0 0 1rem 0;
   max-width: 700px;
-  text-align: center;
 }
 
 article img, .w3-container img {
@@ -214,7 +213,6 @@ article img, .w3-container img {
   color: #e7e7e7;
   font-size: 2rem;
   text-shadow: 0 1px 4px #636340;
-  text-align: center;
 }
 
 .numbertext {
