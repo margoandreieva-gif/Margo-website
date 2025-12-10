@@ -1,0 +1,174 @@
+/* -----------------------------
+   MAIN WRAPPER FOR THE FORM
+--------------------------------*/
+#fcf-form {
+    display: block;
+    text-align: center;
+}
+
+/* -----------------------------
+   OUTER BODY CONTAINER
+   (GREEN BOX — NOW SHORTER)
+--------------------------------*/
+.fcf-body {
+    margin: 10px auto; /* less top/bottom space */
+    font-family: Garamond, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #e7e7e7;
+    text-align: center;
+
+    background-color: #636340; /* Soft green */
+    padding: 20px 18px; /* reduced padding */
+
+    max-width: 460px;  /* Slightly narrower */
+    width: 90%;
+    box-sizing: border-box;
+
+    max-height: none; /* ensures no scroll inside */
+}
+
+/* -----------------------------
+   CONTACT US TITLE
+--------------------------------*/
+.fcf-h3 {
+    font-size: 3rem; /* Bigger title */
+    font-weight: bold;
+    margin-top: -15px;
+    margin-bottom: 5px; /* smaller gap */
+    color: #e7e7e7;
+}
+
+/* -----------------------------
+   FORM GROUPS (less spacing)
+--------------------------------*/
+.fcf-form-group {
+    margin-bottom: 0.8rem; /* reduced */
+}
+
+/* -----------------------------
+   INPUT GROUP WRAPPER
+--------------------------------*/
+.fcf-input-group {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* -----------------------------
+   INPUT + TEXTAREA STYLES
+--------------------------------*/
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.6rem + 2px);
+    padding: 0.45rem 0.8rem;
+
+    font-size: 1rem;
+    color: #000;
+    background-color: #e7e7e7;
+
+    border-radius: 1.2rem;
+    outline: none;
+    border: none;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #2e3e2f;
+}
+
+/* TEXTAREA (shorter height) */
+textarea.fcf-form-control {
+    height: 80px; /* reduced so green box is shorter */
+    padding: 0.6rem 0.8rem;
+}
+
+/* -----------------------------
+   LABELS — LEFT ALIGNED
+--------------------------------*/
+label.fcf-label {
+    display: block;
+    text-align: left;
+    width: 100%;
+    color: #e7e7e7;
+    margin-bottom: 0.25rem;
+}
+
+/* -----------------------------
+   CREDIT TEXT
+--------------------------------*/
+.fcf-credit {
+    padding-top: 5px;
+    font-size: 0.8rem;
+    color: #e7e7e7;
+}
+
+.fcf-credit a {
+    color: #ffffff;
+}
+
+/* -----------------------------
+   BUTTON BASE STYLE
+--------------------------------*/
+.fcf-btn {
+    display: inline-block;
+    cursor: pointer;
+
+    border: 3px solid transparent;
+    border-radius: 1.2rem;
+    transition: background-color 0.15s, color 0.15s;
+}
+
+/* -----------------------------
+   PRIMARY RED BUTTON
+   (smaller size)
+--------------------------------*/
+.fcf-btn-primary {
+    font-family: Garamond Bold, Georgia Bold, 'Times New Roman Bold', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+
+    background-color: #7c000f;
+    border-color: #7c000f;
+    color: #fff;
+
+    font-size: 0.9rem;       /* smaller */
+    padding: 0.45rem 0.9rem; /* smaller */
+    border-radius: 1.2rem;
+}
+
+.fcf-btn-primary:hover {
+    background-color: #e7e7e7;
+    border-color: #7c000f;
+    color: #000;
+}
+
+/* -----------------------------
+   LARGE BUTTON STYLE (still small)
+--------------------------------*/
+.fcf-btn-lg {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.9rem;
+}
+
+/* -----------------------------
+   FULL WIDTH BUTTON
+--------------------------------*/
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+    max-width: 240px; /* smaller button area */
+    margin: 0 auto;
+}
+
+.fcf-btn-block + .fcf-btn-block {
+    margin-top: 0.4rem;
+}
+
+input[type="submit"].fcf-btn-block {
+    width: 100%;
+}
+
+

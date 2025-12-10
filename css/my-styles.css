@@ -1,0 +1,411 @@
+ @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* --------------------------
+   Root / Base
+---------------------------*/
+:root {
+  --brand: #7c000f;
+  --light-head: #e7e7e7;
+  --text: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--text);
+  background: #e7e7e7;
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* Primary red button */
+.fcf-btn-primary {
+  display: inline-block;
+  font-family: Garamond Bold, Georgia Bold, 'Times New Roman Bold', Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+
+  background-color: #7c000f;
+  border: 2px solid #7c000f;
+  color: #fff;
+
+  font-size: 0.9rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 1.2rem;
+
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.fcf-btn-primary:hover {
+  background-color: #e7e7e7;
+  border-color: #7c000f;
+  color: #000;
+}
+
+/* --------------------------
+   Headings
+---------------------------*/
+h1, h2, h3 {
+  font-family: "EB Garamond", Garamond, serif;
+  margin: 0 0 0.5rem 0;
+  color: #7c000f;
+}
+
+h1 { font-weight: 700; font-size: 2rem; }
+h2 { font-weight: 600; font-size: 1.6rem; }
+h3 { font-weight: 600; font-size: 1.25rem; color: #636340; }
+
+.w3-container { padding: 1rem; }
+
+/* --------------------------
+   HEADER + NAV BAR
+---------------------------*/
+.header, header, .w3-container.header {
+  background-color: var(--brand);
+  color: var(--light-head);
+  position: relative;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
+}
+
+/* Title */
+.logo-title, header h1 {
+  font-family: "EB Garamond", serif;
+  color: var(--light-head);
+  margin: 0;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+/* NAV MENU */
+.nav-menu {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin: 0 0.6rem;
+}
+
+.nav-menu a {
+  color: var(--light-head);
+  font-family: "EB Garamond", serif;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.15rem 0.3rem;
+}
+
+.nav-menu a:hover {
+  text-decoration: underline;
+  opacity: 0.95;
+}
+
+/* FIX: Active nav link should NOT get green box */
+.nav-menu a.active {
+  background: none !important;
+  padding: 0.15rem 0.3rem;
+  color: var(--light-head) !important;
+}
+
+/* --------------------------
+   HAMBURGER (mobile)
+---------------------------*/
+.hamburger {
+  position: absolute;
+  right: 18px;
+  top: 18px;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--light-head);
+  display: none;
+}
+
+.nav-menu ul.mobile-hidden { display: none; }
+
+.nav-menu.active ul.mobile-hidden {
+  display: block;
+}
+
+/* Mobile layout */
+@media (max-width: 880px) {
+  .header-inner { justify-content: center; padding-right: 60px; }
+  .nav-menu ul { display: none; }
+  .hamburger { display: block; }
+
+  .nav-menu.active ul {
+    display: block;
+    background: var(--brand);
+    padding: 0.6rem 0;
+    margin-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-menu li { display: block; margin: 0.2rem 0; }
+  .nav-menu a { display: block; padding: 0.6rem 1rem; }
+}
+
+/* --------------------------
+   TEXT / PARAGRAPHS
+---------------------------*/
+p, li, .content, .w3-container p {
+  font-family: "Roboto", Arial, sans-serif;
+  color: var(--text);
+  font-size: 1rem;
+  margin: 0 0 1rem 0;
+  max-width: 700px;
+  text-align: center;
+}
+
+article img, .w3-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.row-color-1 {
+  background-color: #e7e7e7;
+}
+
+/* --------------------------
+   SLIDESHOW
+---------------------------*/
+.slideshow-container {
+  position: relative;
+  max-width: 900px;
+  margin: 1.5rem auto;
+}
+
+.mySlides { display: none; }
+
+.mySlides img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  color: #e7e7e7;
+  font-size: 2rem;
+  text-shadow: 0 1px 4px #636340;
+  text-align: center;
+}
+
+.numbertext {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  font-family: "Garamond", serif;
+  color: var(--light-head);
+  background: rgba(0,0,0,0.4);
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 12px;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--light-head);
+  user-select: none;
+}
+
+.next { right: 8px; }
+.prev { left: 8px; }
+
+.prev:hover, .next:hover {
+  background: rgba(0,0,0,0.15);
+}
+
+/* FIX: Only slideshow dots use .active */
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #97976c;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .2s;
+}
+
+.dot.active,
+.dot:hover {
+  background-color: #636340;
+}
+
+.fade { animation: fade 1s ease-in-out; }
+@keyframes fade { from { opacity: .3; } to { opacity: 1; } }
+
+/* --------------------------
+   FOOTER
+---------------------------*/
+footer {
+  background-color: var(--brand);
+  color: var(--light-head);
+  padding: 2rem 1rem;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+footer h3, footer h4 {
+  font-family: "EB Garamond", serif;
+  margin-bottom: 0.5rem;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.footer-social a {
+  color: #e7e7e7;
+  text-decoration: none;
+  font-size: 0.98rem;
+}
+
+.footer-social a:hover {
+  opacity: 0.88;
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 0.7rem;
+  color: #e7e7e7;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.85rem;
+  margin-right: 0.2rem;
+}
+
+/* --------------------------
+   Utilities
+---------------------------*/
+.text-center { text-align: center; }
+.mt-1 { margin-top: 1rem; }
+.mb-1 { margin-bottom: 1rem; }
+
+/* --------------------------
+   Featured Section (Home)
+---------------------------*/
+.featured-section {
+  background-color: #636340;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.featured-section h2 {
+  font-family: "EB Garamond", serif;
+  color: #e7e7e7;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.featured-section .text {
+  color: #e7e7e7 !important;
+  text-shadow: #636340 0 1px 4px;
+  margin-bottom: -4rem;
+}
+
+.featured-section .dot {
+  background-color: #cfcfb2;
+  margin-bottom: -2rem;
+}
+
+.featured-section .dot:hover,
+.featured-section .dot.active {
+  background-color: #ffffff;
+}
+
+/* --------------------------
+   Resume Page Specific
+---------------------------*/
+.profile-name {
+  color: #e7e7e7;
+  font-family: "EB Garamond", serif;
+}
+
+.icon-green {
+  color: #636340 !important;
+}
+
+.skill-bg, .language-bg {
+  background-color: #e7e7e7;
+}
+
+.skill-fill, .language-fill {
+  background-color: #636340;
+  color: #e7e7e7;
+  text-align: center;
+  padding: 2px 0;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.date-current {
+  background-color: #636340;
+  color: #e7e7e7;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+.section-title {
+    color: #636340;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+.video-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.w3-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* horizontally center everything */
+    text-align: center;    /* center text lines */
+    width: 100%;
+}
+
+.fcf-btn-primary {
+    display: inline-block;   /* ensures the button centers properly */
+    margin-top: 10px;
+}
