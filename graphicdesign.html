@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Graphic Design – Margo Andreieva</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/my-styles.css">
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<header class="w3-container header">
+    <div class="header-inner">
+        <h1 class="logo-title">Margo Andreieva Portfolio</h1>
+
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <nav id="mainMenu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="motiongraphics.html">Motion Graphics</a></li>
+                <li><a href="illustration.html">Illustration</a></li>
+                <li><a href="graphicdesign.html" class="active">Graphic Design</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- CONTENT -->
+<main class="w3-container" style="max-width:1000px; margin: 30px auto; text-align:center;">
+
+    <h1 class="section-title" style="margin-bottom: 30px;">Graphic Design</h1>
+
+    <!-- ----------------------
+         WOOFAPP
+    ----------------------- -->
+    <h2 style="margin-top: 40px;">WOOFAPP</h2>
+
+    <div class="image-block">
+        <img src="assets/woofapp-brandguidelines-1.png" alt="WOOFAPP Brand Guidelines 1" class="portfolio-image">
+        <img src="assets/woofapp-brandguidelines-2.png" alt="WOOFAPP Brand Guidelines 2" class="portfolio-image">
+        <img src="assets/woofapp-brandguidelines-3.png" alt="WOOFAPP Brand Guidelines 3" class="portfolio-image">
+        <img src="assets/woofapp-brandguidelines-4.png" alt="WOOFAPP Brand Guidelines 4" class="portfolio-image">
+        <img src="assets/woofapp-brandguidelines-5.png" alt="WOOFAPP Brand Guidelines 5" class="portfolio-image">
+        <img src="assets/woofapp-brandguidelines-7.png" alt="WOOFAPP Brand Guidelines 7" class="portfolio-image">
+        <img src="assets/woofapp-brandguidelines-6.png" alt="WOOFAPP Brand Guidelines 6" class="portfolio-image">
+        <p class="image-description">
+            <strong>WOOFAPP Brand Guidelines</strong> – This is a school project from Typography Design class, where I created a full branding system for an imaginary app focused on communication between dog owners and their pets.
+        </p>
+    </div>
+
+
+    <!-- ----------------------
+         CONCORD DRUGS
+    ----------------------- -->
+    <h2 style="margin-top: 50px;">Concord Drugs</h2>
+
+    <div class="image-block">
+        <img src="assets/concord-drugs-1.jpg" alt="Concord Drugs Brand 1" class="portfolio-image">
+        <img src="assets/concord-drugs-2.jpg" alt="Concord Drugs Brand 2" class="portfolio-image">
+        <img src="assets/concord-drugs-3.jpg" alt="Concord Drugs Brand 3" class="portfolio-image">
+        <img src="assets/concord-drugs-4.jpg" alt="Concord Drugs Brand 4" class="portfolio-image">
+        <img src="assets/concord-drugs-5.jpg" alt="Concord Drugs Brand 2" class="portfolio-image">
+        <img src="assets/concord-drugs-6.jpg" alt="Concord Drugs Brand 3" class="portfolio-image">
+        <img src="assets/concord-drugs-7.jpg" alt="Concord Drugs Brand 4" class="portfolio-image">
+
+        <p class="image-description">
+            <strong>Concord Drugs Brand System</strong> – A visual identity project focused on creating modern, clean branding for a fictional pharmaceutical company. This included logos, typography, color system, and layout rules.
+        </p>
+    </div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-social">
+        <a href="https://instagram.com/margoraccoon" target="_blank">
+            Instagram: @margoraccoon
+        </a>
+
+        <a href="mailto:andeyevamargo2812@gmail.com">
+            Email: andeyevamargo2812@gmail.com
+        </a>
+
+        <a href="https://www.linkedin.com/in/marharyta-andreieva-646537257/" target="_blank">
+            LinkedIn Profile
+        </a>
+
+        <p>&copy; 2025 Marharyta Andreieva</p>
+    </div>
+</footer>
+
+<!-- MENU TOGGLE SCRIPT -->
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('mainMenu');
+    menu.classList.toggle('active');
+}
+</script>
+</body>
+</html>

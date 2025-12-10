@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Me — Margo Andreieva</title>
+
+    <!-- Your main stylesheet (header + navigation + footer styles) -->
+    <link rel="stylesheet" href="css/my-styles.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER TOP BAR ===== -->
+<header class="w3-container header">
+    <div class="header-inner">
+        <h1 class="logo-title">Margo Andreieva Portfolio</h1>
+
+        <!-- Hamburger button (mobile) -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <!-- Navigation -->
+        <nav id="mainMenu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="motiongraphics.html">Motion Graphics</a></li>
+                <li><a href="illustration.html">Illustration</a></li>
+                <li><a href="graphicdesign.html">Graphic Design</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- ===== ABOUT PAGE CONTENT ===== -->
+<section class="about-section w3-container" style="max-width:900px; margin:auto; text-align:center; padding:40px 20px;">
+    
+    <img src="assets/my-logo-3d.png" alt="My Logo" class="about-logo"
+         style="width:180px; max-width:70%; margin-bottom:25px;">
+
+    <p style="font-size:1.15rem; line-height:1.6;">
+        Hello! I'm Marharyta Andreieva, a passionate designer and illustrator based in Queens, NY. 
+        I specialize in motion design and graphic design, blending visual storytelling with technical skill. 
+        Currently focusing my education on motion, I love creating engaging narrative videos using After Effects, 
+        then bringing them to life with sound and music in Premiere Pro. My background working in a print shop has 
+        also given me the ability to design quickly and efficiently in Adobe Illustrator and Adobe Photoshop, 
+        producing smart, clean visuals for both digital and print.
+        <br><br>
+        Outside of digital work, my biggest passion is watercolor illustration. I hand-paint scenes inspired by 
+        real moments in my life, turning personal experiences into expressive artwork. These illustrations reflect 
+        the world around me—events I attend, places I visit, and the everyday stories that shape who I am. 
+        Whether I’m animating motion graphics or painting with watercolor, I strive to create work that feels 
+        authentic, thoughtful, and full of personality.
+    </p>
+
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-social">
+        <a href="https://instagram.com/margoraccoon" target="_blank">
+            Instagram: @margoraccoon
+        </a>
+
+        <a href="mailto:andeyevamargo2812@gmail.com">
+            Email: andeyevamargo2812@gmail.com
+        </a>
+
+        <a href="https://www.linkedin.com/in/marharyta-andreieva-646537257/" target="_blank">
+            LinkedIn Profile
+        </a>
+
+        <p>&copy; 2025 Marharyta Andreieva</p>
+    </div>
+</footer>
+
+<!-- MENU TOGGLE SCRIPT -->
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('mainMenu');
+    menu.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

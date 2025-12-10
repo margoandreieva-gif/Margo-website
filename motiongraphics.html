@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motion Graphics – Margo Andreieva</title>
+
+    <!-- Global Header + Footer Styles -->
+    <link rel="stylesheet" href="css/my-styles.css">
+    <!-- If you have a separate styles file for this page, add below -->
+</head>
+
+<body>
+
+    <!-- Top Bar (Same as Home Page) -->
+    <header class="w3-container header">
+        <div class="header-inner">
+            <h1 class="logo-title">Margo Andreieva Portfolio</h1>
+
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+            <nav id="mainMenu" class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="motiongraphics.html" class="active">Motion Graphics</a></li>
+                    <li><a href="illustration.html">Illustration</a></li>
+                    <li><a href="graphicdesign.html">Graphic Design</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- PAGE CONTENT -->
+    <main class="page-content">
+
+        <h1 class="page-title" style="text-align:center; margin-top: 40px;">
+            Motion Graphics
+        </h1>
+
+<h1 class="section-title">Motion Reel</h1>
+
+<div class="video-wrapper">
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/o2sKSpbkeRc?si=iKI7xepZkM1RM3Un"
+        title="YouTube video player" frameborder="0" allowfullscreen>
+    </iframe>
+</div>
+
+
+<h1 class="section-title">History of High Heels</h1>
+
+<div class="video-wrapper">
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/s_wAmcqoEck?si=L_4Jq6MEBW__VU6j"
+        title="YouTube video player" frameborder="0" allowfullscreen>
+    </iframe>
+</div>
+
+    </main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-social">
+        <a href="https://instagram.com/margoraccoon" target="_blank">
+            Instagram: @margoraccoon
+        </a>
+
+        <a href="mailto:andeyevamargo2812@gmail.com">
+            Email: andeyevamargo2812@gmail.com
+        </a>
+
+        <a href="https://www.linkedin.com/in/marharyta-andreieva-646537257/" target="_blank">
+            LinkedIn Profile
+        </a>
+
+        <p>&copy; 2025 Marharyta Andreieva</p>
+    </div>
+</footer>
+
+<!-- MENU TOGGLE SCRIPT -->
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('mainMenu');
+    menu.classList.toggle('active');
+}
+</script>
+
+</body>
+</html>

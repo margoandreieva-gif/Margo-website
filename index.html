@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Marharyta Andreieva</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Your stylesheet -->
+    <link rel="stylesheet" href="css/my-styles.css">
+    
+    <!-- Optional Google Fonts -->
+    <!--
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    -->
+</head>
+
+<body>
+<div>
+
+    <!-- ===== HEADER TOP BAR ===== -->
+    <header class="w3-container header">
+    <div class="header-inner">
+        <h1 class="logo-title">Margo Andreieva Portfolio</h1>
+
+        <!-- Hamburger button -->
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;  <!-- Hamburger icon -->
+        </div>
+
+        <!-- Navigation -->
+        <nav id="mainMenu" class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="motiongraphics.html">Motion Graphics</a></li>
+                <li><a href="illustration.html">Illustration</a></li>
+                <li><a href="graphicdesign.html">Graphic Design</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <div class="w3-container">
+        <h1>About Me</h1>
+        <p>Hello! I'm Marharyta Andreieva, a passionate designer and illustrator based in Queens, NY. I specialize in motion design and graphic design, blending visual storytelling with technical skill. Currently focusing my education on motion, I love creating engaging narrative videos using After Effects, then bringing them to life with sound and music in Premiere Pro. My background working in a print shop has also given me the ability to design quickly and efficiently in Adobe Illustrator and Adobe Photoshop, producing smart, clean visuals for both digital and print.
+        </p>
+        <a href="about.html" class="fcf-btn-primary">Learn More About Me</a>
+
+    </div>
+    <section class="w3-container">
+        <br>
+        <h3>Highlights of my work</h3>
+        <p>These are some of my graphic design projects and illustrations created over the past year. One of my largest projects was History of High Heels, a school assignment where I developed a full motion-design piece. You can watch the complete video on my YouTube channel. Among my recent works, my favorite is the Jazz Illustration—a watercolor and colored pencil piece inspired by a real bar in Williamsburg. The atmosphere of the place, along with the warmth and energy of live jazz, helped shape the details, colors, and mood of the illustration.
+        </p>
+    </section>
+    <!-- ===== NEW SLIDESHOW SECTION (Featured Work) ===== -->
+<section class="featured-section w3-container">
+  <h2>Featured Work</h2>
+
+  <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Slide 1 — Motion Graphics -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="assets/motion-reel-thumbnail.jpg" style="width:100%" alt="">
+      <div class="text">Motion Graphics</div>
+    </div>
+
+    <!-- Slide 2 — Illustration -->
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="assets/jazz_illustration-300dpi.jpg" style="width:100%" alt="">
+      <div class="text">Illustration</div>
+    </div>
+
+    <!-- Slide 3 — Graphic Design -->
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="assets/concord-drugs-thumbnail.png" style="width:100%" alt="">
+      <div class="text">Graphic Design</div>
+    </div>
+
+    <!-- Buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- Dots -->
+  <div style="text-align:center; margin-top:10px;">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</section>
+
+    <!-- ===== FOOTER ===== -->
+   <footer class="footer">
+
+    <div class="footer-social">
+        <a href="https://instagram.com/margoraccoon" target="_blank">
+            Instagram: @margoraccoon
+        </a>
+
+        <a href="mailto:andeyevamargo2812@gmail.com">
+            Email: andeyevamargo2812@gmail.com
+        </a>
+
+        <a href="https://www.linkedin.com/in/marharyta-andreieva-646537257/" target="_blank">
+            LinkedIn Profile
+        </a>
+        <p>&copy; 2025 Marharyta Andreieva</p>
+    </div>
+</footer>
+
+</div>
+
+
+<!-- Slideshow JavaScript -->
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/prev controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+  slides[slideIndex - 1].style.display = "block";  
+  dots[slideIndex - 1].className += " active";
+}
+</script>
+
+</body>
+</html>
+
